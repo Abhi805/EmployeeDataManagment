@@ -1,3 +1,5 @@
+
+
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
@@ -9,7 +11,7 @@ const EmployeeSchema = new Schema({
     email: {
         type: String,
         required: true,
-        unique:true
+        unique: true
     },
     phone: {
         type: String,
@@ -23,7 +25,8 @@ const EmployeeSchema = new Schema({
         type: Number,
         required: true
     },
-},{timestamps:true});
+  
+}, { timestamps: true });
 
-const EmployeeModel = mongoose.model('Employee',EmployeeSchema);
+const EmployeeModel = mongoose.model('Employee', EmployeeSchema);
 module.exports = EmployeeModel;

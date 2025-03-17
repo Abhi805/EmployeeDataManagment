@@ -13,7 +13,7 @@ const createEmployee = async (req, res) => {
         }
 
         const employee = new EmployeeModel({
-            name, email, phone, department, salary
+            name, email, phone, department, salary,
         });
 
         await employee.save();
@@ -104,3 +104,4 @@ const deleteEmployee = async (req, res) => {
 };
 
 module.exports = { createEmployee, getAllEmployees, getEmployeeById, updateEmployee, deleteEmployee };
+
