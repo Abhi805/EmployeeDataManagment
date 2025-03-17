@@ -32,6 +32,9 @@ const Navbar = () => {
                   <Link className="nav-link" to="/employees">Employees</Link>
                 </li>
                 <li className="nav-item">
+                <Link className="btn btn-success" to="/employees/add">+ Add Employee</Link>
+                </li>
+                <li className="nav-item">
                   <button className="btn btn-danger ms-2" onClick={handleLogout}>Logout</button>
                 </li>
               </>
