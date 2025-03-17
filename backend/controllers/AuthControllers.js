@@ -4,6 +4,8 @@ const UserModel = require('../models/UserModel');
 
 const registerUser = async (req, res) => {
     try {
+        console.log("Received Data:", req.body); // Debugging ke liye
+
         const { name, email, password, role } = req.body;
 
         const existingUser = await UserModel.findOne({ email });
@@ -36,6 +38,7 @@ const registerUser = async (req, res) => {
         });
     }
 };
+
 
 const loginUser = async (req, res) => {
 
